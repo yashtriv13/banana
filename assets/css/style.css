@@ -472,6 +472,27 @@ section {
   font-family: "Poppins", sans-serif;
   color: #0563bb;
   margin-bottom: 10px;
+  display: inline;
+}
+.resume .resume-item mh4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #811d1d;
+  margin-bottom: 10px;
+  display: inline;
+}
+.resume .resume-item inh4 {
+  line-height: 18px;
+  display: inline;
+  font-size: 16px;
+  font-weight: 600;
+  
+  font-family: "Poppins", sans-serif;
+  color: #161616;
+  margin-bottom: 10px;
 }
 .resume .resume-item h5 {
   font-size: 16px;
@@ -480,6 +501,14 @@ section {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+}
+  .resume .resume-item inh5 {
+    font-size: 16px;
+    
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 .resume .resume-item ul {
   padding-left: 20px;
