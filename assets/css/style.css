@@ -537,6 +537,10 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+.port-frame {
+  align-content: center;
+  text-align: center;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -915,6 +919,7 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
+
 }
 .contact .info i {
   font-size: 20px;
@@ -942,7 +947,7 @@ section {
   font-size: 14px;
   color: #728394;
 }
-.contact .info .email, .contact .info .phone {
+.contact .info .email, .contact .info .phone, .contact .info .address {
   margin-top: 40px;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
