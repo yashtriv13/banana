@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>My Website</title>
+    <style>
+
+      body {
+      background-color: #ebebeb;
+    }
+      /* Set a max-width for the content area and center it on the page */
+     #calcumate-root {
+        width: 100%;
+        height: 100%;
+
+      
+        
+      }
+
+     @media (min-aspect-ratio: 1415/976) {
+  #calcumate-root{
+    max-width: 69%;
+    padding-left: 15.5%;
+    justify-content: center;
+    align-items: center;
+    /* limit the max width to 75% of the viewport width if the height-to-width ratio exceeds 4:3 */
+  }
+  }
+      
+      /* Add padding and a border around the calculator */
+      
+      
+      
+    </style>
+ 
+ <script src=
+ "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+  </head>
+ 
+  <body >
+
+<div id="calcumate-container">
+<div
+  id="calcumate-root"
+  data-integration="yashtrivedi.me"
+  data-integration-2=""
+  data-ref="AQICAHhReAOexSsfBeJ/FMNVdjLFzyMEhuepXqwRfRaqckbrnAF3uSjJMd30xC6fExhicCZEAAAAgzCBgAYJKoZIhvcNAQcGoHMwcQIBADBsBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDADP92ZQ8SLSgX/H2gIBEIA/4TJAK6J2TXXg9Pk3V4ko2U8nedvYtAoqR8nG//W98BfO6TewVih7f4XUlVbBhgHwvM0t5L3fqiL2n6/tzDQh"
+  data-int="ddf09d7c-5d3d-462b-8823-b12283966d16"
+></div>
+<script defer src="https://calcumate-calculator-new-production.s3-ap-southeast-2.amazonaws.com/static/js/main.js"></script>
+
+   <button id="replace-btn">Replace HTML code</button>
+</div>
+
+   
+   
+      
+
+   <script>
+      const obj = JSON.parse(localStorage.getItem('selectedUserItems'));
+      console.log(obj);
+   </script>
+  </body>
+</html>
