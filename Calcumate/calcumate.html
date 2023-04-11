@@ -58,7 +58,16 @@
 
    <script>
       const obj = JSON.parse(localStorage.getItem('selectedUserItems'));
-      console.log(obj);
+      
+const products = [];
+
+for (const item of obj['ddf09d7c-5d3d-462b-8823-b12283966d16']) {
+  products.push(item.product);
+}
+console.log(obj);
+console.log(products);
+
+      
    </script>
   </body>
 </html>
