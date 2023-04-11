@@ -67,6 +67,25 @@ for (const item of obj['ddf09d7c-5d3d-462b-8823-b12283966d16']) {
 console.log(obj);
 console.log(products);
 
+// To post data to webhook
+const fetch = require('node-fetch');
+
+const products = obj['ddf09d7c-5d3d-462b-8823-b12283966d16'].map(item => ({
+  product: item.product,
+  quantity: item.quantity
+}));
+
+const webhookUrl = 'https://webhook.site/7eeba3e1-fb06-4a74-8a3c-0c788a43cd71?';
+
+fetch(webhookUrl, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(products)
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
       
    </script>
   </body>
