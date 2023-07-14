@@ -54,10 +54,14 @@
       
 
    <script>
-      const value = {"1-yashtrivedi.me-16-ft" : "$4220.00", "1-yashtrivedi.me-8-ft" : "$ 2110.00" };
+      var dynamicPrices = {
+  "1-yashtrivedi.me-16-ft": "$4220.00",
+  "1-yashtrivedi.me-8-ft": "$2110.00"
+};
+var jsonString = JSON.stringify(dynamicPrices);
       const obj = JSON.parse(localStorage.getItem('selectedUserItems'));
       console.log(obj);
-      localStorage.setItem("DYNAMIC-PRICES",value);
+      localStorage.setItem("DYNAMIC-PRICES",jsonString);
       
    </script>
   </body>
