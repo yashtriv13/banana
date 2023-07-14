@@ -17,16 +17,17 @@
         
       }
 
-     @media (min-aspect-ratio: 1415/976) {
+   /*  @media (min-aspect-ratio: 1415/976) {
   #calcumate-root{
     max-width: 69%;
     padding-left: 15.5%;
     justify-content: center;
     align-items: center;
-    /* limit the max width to 75% of the viewport width if the height-to-width ratio exceeds 4:3 */
-  }
-  }
-      
+    // limit the max width to 75% of the viewport width if the height-to-width ratio exceeds 4:3 
+  }*/
+
+
+        
       /* Add padding and a border around the calculator */
       
       
@@ -40,7 +41,6 @@
  
   <body >
 
-<div id="calcumate-container">
 <div
   id="calcumate-root"
   data-integration="yashtrivedi.me"
@@ -51,17 +51,13 @@
 <script defer src="https://calcumate-calculator-new-production.s3-ap-southeast-2.amazonaws.com/static/js/main.js"></script>
 
    
-</div>
-
-   
-   
       
 
    <script>
-      const value = {"1-yashtrivedi.me-16-ft" : "$ 4220", "1-yashtrivedi.me-8-ft" : "$ 2110" }
+      //const value = {"1-yashtrivedi.me-16-ft" : "$4220.00", "1-yashtrivedi.me-8-ft" : "$ 2110.00" }
       const obj = JSON.parse(localStorage.getItem('selectedUserItems'));
       console.log(obj);
-      localStorage.setItem("DYNAMIC-PRICES", value);
+      
    </script>
   </body>
 </html>
