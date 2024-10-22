@@ -6,7 +6,7 @@
     <style>
 
       body {
-      background-color: #ebebeb;
+      background-color: #ffffff;
     }
       /* Set a max-width for the content area and center it on the page */
      #calcumate-root {
@@ -17,15 +17,17 @@
         
       }
 
-     @media (min-aspect-ratio: 1415/976) {
+   /*  @media (min-aspect-ratio: 1415/976) {
   #calcumate-root{
-    
+    max-width: 69%;
+    padding-left: 15.5%;
     justify-content: center;
     align-items: center;
-    /* limit the max width to 75% of the viewport width if the height-to-width ratio exceeds 4:3 */
-  }
-  }
-      
+    // limit the max width to 75% of the viewport width if the height-to-width ratio exceeds 4:3 
+  }*/
+
+
+        
       /* Add padding and a border around the calculator */
       
       
@@ -39,7 +41,6 @@
  
   <body >
 
-<div id="calcumate-container">
 <div
   id="calcumate-root"
   data-integration="yashtrivedi.me"
@@ -49,43 +50,18 @@
 ></div>
 <script defer src="https://calcumate-calculator-new-production.s3-ap-southeast-2.amazonaws.com/static/js/main.js"></script>
 
-   <button id="replace-btn">Replace HTML code</button>
-</div>
-
-   
    
       
 
    <script>
+      var dynamicPrices = {
+  "1-yashtrivedi.me-16-ft": "$4220.00",
+  "1-yashtrivedi.me-8-ft": "$2110.00"
+};
+var jsonString = JSON.stringify(dynamicPrices);
       const obj = JSON.parse(localStorage.getItem('selectedUserItems'));
-      
-const products = [];
-
-for (const item of obj['ddf09d7c-5d3d-462b-8823-b12283966d16']) {
-  products.push(item.product);
-}
-console.log(obj);
-console.log(products);
-
-// To post data to webhook
-const fetch = require('node-fetch');
-
-const products = obj['ddf09d7c-5d3d-462b-8823-b12283966d16'].map(item => ({
-  product: item.product,
-  quantity: item.quantity
-}));
-
-const webhookUrl = 'https://webhook.site/7eeba3e1-fb06-4a74-8a3c-0c788a43cd71?';
-
-fetch(webhookUrl, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(products)
-})
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-
+      console.log(obj);
+      localStorage.setItem("DYNAMIC-PRICES",jsonString);
       
    </script>
   </body>

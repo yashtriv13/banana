@@ -19,7 +19,8 @@
 
      @media (min-aspect-ratio: 1415/976) {
   #calcumate-root{
-    
+    max-width: 69%;
+    padding-left: 15.5%;
     justify-content: center;
     align-items: center;
     /* limit the max width to 75% of the viewport width if the height-to-width ratio exceeds 4:3 */
@@ -45,7 +46,7 @@
   data-integration="yashtrivedi.me"
   data-integration-2=""
   data-ref="AQICAHhReAOexSsfBeJ/FMNVdjLFzyMEhuepXqwRfRaqckbrnAF3uSjJMd30xC6fExhicCZEAAAAgzCBgAYJKoZIhvcNAQcGoHMwcQIBADBsBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDADP92ZQ8SLSgX/H2gIBEIA/4TJAK6J2TXXg9Pk3V4ko2U8nedvYtAoqR8nG//W98BfO6TewVih7f4XUlVbBhgHwvM0t5L3fqiL2n6/tzDQh"
-  data-int="ddf09d7c-5d3d-462b-8823-b12283966d16"
+  data-int="b29d5550-3eda-4182-a255-6ce557944b6f"
 ></div>
 <script defer src="https://calcumate-calculator-new-production.s3-ap-southeast-2.amazonaws.com/static/js/main.js"></script>
 
@@ -58,35 +59,7 @@
 
    <script>
       const obj = JSON.parse(localStorage.getItem('selectedUserItems'));
-      
-const products = [];
-
-for (const item of obj['ddf09d7c-5d3d-462b-8823-b12283966d16']) {
-  products.push(item.product);
-}
-console.log(obj);
-console.log(products);
-
-// To post data to webhook
-const fetch = require('node-fetch');
-
-const products = obj['ddf09d7c-5d3d-462b-8823-b12283966d16'].map(item => ({
-  product: item.product,
-  quantity: item.quantity
-}));
-
-const webhookUrl = 'https://webhook.site/7eeba3e1-fb06-4a74-8a3c-0c788a43cd71?';
-
-fetch(webhookUrl, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(products)
-})
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-
-      
+      console.log(obj);
    </script>
   </body>
 </html>

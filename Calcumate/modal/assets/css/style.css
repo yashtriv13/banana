@@ -550,83 +550,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Resume - SubITEM
---------------------------------------------------------------*/
-
-.resume .resume-subitem {
-  padding: 0 0 1px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #0563bb;
-  position: relative;
-}
-.resume .resume-subitem h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #0563bb;
-  margin-bottom: 10px;
-  display: inline;
-}
-.resume .resume-subitem mh4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #811d1d;
-  margin-bottom: 10px;
-  display: inline;
-}
-.resume .resume-subitem inh4 {
-  line-height: 18px;
-  display: inline;
-  font-size: 16px;
-  font-weight: 600;
-  
-  font-family: "Poppins", sans-serif;
-  color: #161616;
-  margin-bottom: 10px;
-}
-.resume .resume-subitem h5 {
-  font-size: 16px;
-  background: #f7f8f9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-  .resume .resume-subitem inh5 {
-    font-size: 16px;
-    
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.resume .resume-subitem ul {
-  padding-left: 20px;
-}
-.resume .resume-subitem ul li {
-  padding-bottom: 10px;
-}
-.resume .resume-subitem:last-child {
-  padding-bottom: 0;
-}
-.resume .resume-subitem::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border-radius: 50px;
-  left: -7.5px;
-  top: 0;
-  background: #fff;
-  border: 5px solid #0563bb;
-}
-
-/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
@@ -783,18 +706,18 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 1px;
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 1px;
   position: relative;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 1x;
+  height: 1px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #0563bb;
@@ -803,8 +726,8 @@ section {
   background-color: #0563bb;
 }
 .portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+  padding: 1px;
+  box-shadow: 0px 0 1px rgba(69, 80, 91, 0.08);
 }
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
@@ -1184,15 +1107,3 @@ section {
 #footer .credits {
   font-size: 13px;
 }
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-
-#hoverInfo {
-  display: none;
-  background-color: #f0f0f0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  position: absolute;
-  z-index: 1000; }
