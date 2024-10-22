@@ -262,3 +262,35 @@
   });
 
 })()
+
+/**
+   * Calculator for years of experience
+   */
+
+var date = new Date().getFullYear();
+date = date - 2016; // Uncomment this line if you want to assign a specific year
+document.querySelectorAll(".exp_year").forEach(function(element) {
+    element.innerHTML = date;
+});
+
+
+/**
+   * Calculator for years of experience
+   */
+
+var hoverTargets = document.querySelectorAll(".bx bx-file-blank");
+  var hoverInfos = document.querySelectorAll(".hoverInfo");
+
+  hoverTargets.forEach(function(hoverTarget, index) {
+    var hoverInfo = hoverInfos[index];
+
+    hoverTarget.addEventListener("mouseover", function() {
+      hoverInfo.style.display = "block";
+      hoverInfo.style.top = hoverTarget.getBoundingClientRect().bottom + window.scrollY + "px";
+      hoverInfo.style.left = hoverTarget.getBoundingClientRect().left + window.scrollX + "px";
+    });
+
+    hoverTarget.addEventListener("mouseout", function() {
+      hoverInfo.style.display = "none";
+    });
+  });
